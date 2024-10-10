@@ -21,8 +21,8 @@ load_dotenv()
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 # Folder containing the PDFs and their corresponding text files
-PDF_FOLDER_PATH = "C:/Users/ase10774/OneDrive - Aitken Spence/Documents/Branding & Marketing/Coffee Break Chat Bot/PDFS"
-TXT_FOLDER_PATH = "C:/Users/ase10774/OneDrive - Aitken Spence/Documents/Branding & Marketing/Coffee Break Chat Bot/TXTS"
+PDF_FOLDER_PATH = "./PDFS"  # Local folder in your GitHub repo
+TXT_FOLDER_PATH = "./TXTS"  # Local folder in your GitHub repo
 
 # Function to list all PDFs in the folder
 def list_pdfs_in_folder(folder_path):
