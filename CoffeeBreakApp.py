@@ -152,7 +152,7 @@ def chatbot_page():
             if name:
                 st.session_state.name = name
                 st.success(f"Hello, {name}!")
-                st.experimental_rerun()  # Reload the app to display the rest of the content
+                st.rerun()  # Reload the app to display the rest of the content
             else:
                 st.error("Please enter your name")
     else:
